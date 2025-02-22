@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<head>
+    <title>Our Favorite Hobbies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+
+
+       
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+
+
+
+
+        .middle {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+
+
+
+        .image-container {
+            width: 250px;
+            text-align: center;
+        }
+
+
+
+
+        .image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+
+
+
+        .image-container ul,
+        .image-container p {
+            margin-top: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+
+
+
+    .top-section {
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://cdnb.artstation.com/p/assets/images/images/032/493/287/large/liam-tart-shire01-high.jpg?1606614513');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 25px;
+        color: rgb(250, 250, 240);
+        }
+
+
+
+
+    .top-section h1, .top-section p {
+        color: rgb(250, 250, 240) ;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .middle {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        min-height: 50vh;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px 20px;
+        background-image: url('https://media.istockphoto.com/id/1402547845/vector/abstract-biege-nude-watercolor-retro-banner-background-brush-stroke-earth-tone-blue-pink.jpg?s=612x612&w=0&k=20&c=4VNah-oajFEe4FMk_Zc63w7SSTmo8ZxisM6UMkq0aLU=');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 0;
+    }
+        .bottom {
+            width: 100%;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+
+
+
+        .bottom-body h2 {
+            font-family: "Funnel Display", serif;
+            font-size: 2em;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+
+
+
+        .table-hobby-benefit {
+            padding-top: 5vh;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: "Outfit", serif;
+        }
+
+
+
+
+        .table-hobby-benefit th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2vh 20vh;
+            font-size: 25px;
+            text-align: center;
+        }
+
+
+
+
+        .table-hobby-benefit td {
+            padding: 2vh 20vh;
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+
+
+
+        .table-hobby-benefit tr:nth-child(even) {
+            background-color: #e6ffe6;
+        }
+
+
+
+
+        .table-hobby-benefit tr:hover {
+            background-color: #c2f0c2;
+            transition: background-color 0.3s ease;
+        }
+        .top-section, .middle, .bottom {
+            width: 100vw;
+            overflow: hidden;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        button {
+        appearance: none;
+        background-color: lightgreen;
+        border: 0.125em solid #1A1A1A;
+        border-radius: 0.9375em;
+        box-sizing: border-box;
+        color: #3B3B3B;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 3.75em;
+        min-width: 0;
+        outline: none;
+        padding: 1em 2.3em;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+        }
+
+
+
+
+        button:disabled {
+        pointer-events: none;
+        }
+
+
+
+
+        button:hover {
+        color: #fff;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+        }
+
+
+
+
+        button:active {
+        box-shadow: none;
+        transform: translateY(0);
+        }
+
+
+        #social-media a{
+            padding-right: 1vh;
+        }
+
+
+    </style>
+
+
+
+
+    <script>
+        function scrollToMiddle() {
+            document.getElementById("middle").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+
+
+
+</head>
+<body>
+    <div class="top-section">
+        <section class="top">
+                <h1>Our Favorite Hobbies</h1>
+                <p>We all have different hobbies that keep us engaged and entertained. Here are some of our favorite hobbies!</p>
+                <button onclick="scrollToMiddle()">Explore Hobbies</button>
+    </div>
+    </section>
+
+
+
+
+    <section class="middle" id="middle">
+        <div class="image-container">
+            <div class="image">
+                <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/435383621_1864420644020754_3332128123296435656_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeF6jDNceA8h-kpzoo2VC26fsOOgjgJgGzyw46COAmAbPM5-YEHPCbRstzNV6RHi2j0buIU4EdVpDlOepBKI94GB&_nc_ohc=GDnAUuYzsGMQ7kNvgFoMM2C&_nc_oc=AdhuMzyuGtk9tmlJaOr4kd4B02ELX3uVg6BsJ53wdG3B_abQaZ_u8k4Si9IARt06X_M&_nc_zt=23&_nc_ht=scontent-mnl1-2.xx&_nc_gid=AESksnGCoCoj-O96OLwQLdw&oh=00_AYAacjTvuJ8ppQTA8rQkqPppvX0v9yhwQ-_merKvREGYcA&oe=67BE6C70" alt="Duro">
+            </div>
+            <p>Selwyn Duro</p>
+            <ul>
+                <li>Biking</li>
+                <li>Watching K-Dramas</li>
+                <li>Mobile Legends</li>
+            </ul>
+
+
+
+
+            <div id="social-media">
+                <div>
+                    <h1>Social Media</h1>
+                   <a href="https://www.facebook.com/selwyn.duro.5" target="_blank"> <i  class="bi bi-facebook" id="fb" ></i></a>
+                   <a href="https://www.instagram.com/senn_yyyy/" target="_blank">  <i class="bi bi-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/selwyn-duro-2b52052a0/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+       
+        <div class="image-container">
+            <div class="image">
+                <img src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t39.30808-6/287002618_1951310151733775_9127168006327384567_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHorR4ZwTHb5buEY04ooVv_IWVb5D0mCkIhZVvkPSYKQumL8kXa5u_KL_Ua-u7jhAB1Xt89VnMfKStT29DE51oH&_nc_ohc=uYgm9oxPF6YQ7kNvgEaPCaZ&_nc_oc=AdhCsRbAmReThCRm0ArD4TBHXBYOnroM-0HxIW6Z5ec2BdWrM0xndWv8OI0abebt7VM&_nc_zt=23&_nc_ht=scontent.fwnp1-1.fna&_nc_gid=AYRwuajwbE6npizxmGcsa2Q&oh=00_AYC0tMPoN3u4aQzlJF4dTSyybEaJRa7LurQHI5j2hRQTOQ&oe=67BE74E0" alt="Dy">
+            </div>
+            <p>Isaac Paul Dy</p>
+            <ul>
+                <li>Playing instruments</li>
+                <li>Listening to music</li>
+                <li>Learning languages</li>
+            </ul>
+
+
+
+
+            <div id="social-media">
+                <div>
+                    <h1>Social Media</h1>
+                   <a href="https://www.facebook.com/icardano.dy" target="_blank"> <i  class="bi bi-facebook" id="fb" ></i></a>
+                   <a href="https://www.instagram.com/dipwdy/" target="_blank">  <i class="bi bi-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/isaac-paul-c-dy-a7aa21298/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="image-container">
+            <div class="image">
+                <img src="https://scontent.flgp1-1.fna.fbcdn.net/v/t39.30808-6/459486717_3640369639442200_5332645114007892236_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHzJ3juA5VLqPFX8gde-BYankegfwEDNqqeR6B_AQM2qkQQYeLWnkP_r7m0K2gWe0KPegOxziYjAFB1jzKiMC5Q&_nc_ohc=3r4ZdEh418QQ7kNvgEPgQmr&_nc_oc=Adjd784iLeXgpbP3ihOebT3dnNfYEnkbzlvJ4IHs6uKeCgXJav5um-DJPjGVpXYRFA8&_nc_zt=23&_nc_ht=scontent.flgp1-1.fna&_nc_gid=AxbMMg807lU6xHp0yEla7aK&oh=00_AYD0EPNfQ6EDnREXVNu6cXiLQhlkQXGZ1WF0ZizJeWHqPg&oe=67BE3600" alt="Natividad">
+            </div>
+            <p>Jearevh Natividad</p>
+            <ul>
+                <li>Video Gaming</li>
+                <li>Running</li>
+                <li>Acting</li>
+            </ul>
+            <div id="social-media">
+                <div>
+                    <h1>Social Media</h1>
+                    <a href="https://www.facebook.com/jrvhnat" target="_blank"> <i  class="bi bi-facebook" id="fb" ></i></a>
+                    <a href="https://www.instagram.com/jrvhnat/" target="_blank">  <i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jearevh-natividad-baaa66224/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="image-container">
+            <div class="image">
+                <img src="https://scontent.flgp1-1.fna.fbcdn.net/v/t39.30808-6/432053214_2413468408838325_562671060749897795_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGV06zcysFtbAS68E-BS9-gbiWoBPpHMWduJagE-kcxZ5N-9oQsMmwtqk9tU5tr4FJAtZRcPVp1HmIfOAWvXsP2&_nc_ohc=9whyhbxo2PwQ7kNvgHYmw-t&_nc_oc=Adith89bKLr2b8_Z3ky6acHHpscf4UeNfEodgkTcauMj-vfSmCvW-QihuCnNzLakQSU&_nc_zt=23&_nc_ht=scontent.flgp1-1.fna&_nc_gid=A5yZz5hbpyy6xyE_O2WU84S&oh=00_AYDkmSme899M2ATNUZHvvvu9eOmDrWKB-uOFall7PnJ9VQ&oe=67BFAA3E" alt="Sulit">
+            </div>
+            <p>Marc Lester Sulit</p>
+            <ul>
+                <li>Cooking</li>
+                <li>Minecraft</li>
+                <li>Roblox</li>
+            </ul>
+            <div id="social-media">
+                <div>
+                    <h1>Social Media</h1>
+                   <a href="https://www.facebook.com/marcIester21" target="_blank"> <i  class="bi bi-facebook" id="fb" ></i></a>
+                   <a href="https://www.instagram.com/mrclstrr/" target="_blank">  <i class="bi bi-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/marc-lester-e-sulit-190baa33a/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="bottom" style="background-image: url('https://images.pexels.com/photos/606540/pexels-photo-606540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); width:100%; height:100vh; background-size: cover; background-repeat: no-repeat;">
+        <div class="bottom-body">
+            <h2>Benefits of Our Hobbies</h2>
+            <div class="table-hobby-benefit">
+                <table>
+                    <tr>
+                        <th>Hobby</th>
+                        <th>Benefit</th>
+                    </tr>
+                    <tr>
+                        <td>Biking</td>
+                        <td>Enhances cardiovascular health</td>
+                    </tr>
+                    <tr>
+                        <td>Playing instruments</td>
+                        <td>Boosts memory and coordination</td>
+                    </tr>
+                    <tr>
+                        <td>Video Gaming</td>
+                        <td>Improves problem-solving skills</td>
+                    </tr>
+                    <tr>
+                        <td>Cooking</td>
+                        <td>Develops creativity and patience</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
